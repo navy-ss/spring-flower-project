@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no" />
+  <title>Exam Results | Spring Flowers School</title>
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="assets/img/favicon-32x32.png" sizes="32x32" />
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css" />
+  <!-- My Styles -->
+  <link rel="stylesheet" href="assets/css/styles.css" />
+</head>
+
+<body>
+  <!-- Navbar--Start -->
+  <nav class="navbar navbar-light navbar-expand-md sticky-top py-3">
+    <div class="container">
+      <!-- Navbar-Logo -->
+      <img src="assets/img/logo-icon.png" width="45" height="38" /><a class="navbar-brand" href="index.html"><span
+          class="text-success">Spring Flowers School</span></a><button data-bs-toggle="collapse"
+        data-bs-target="#navcol-1" class="navbar-toggler">
+        <span class="visually-hidden">Toggle navigation</span><span class="navbar-toggler-icon"></span>
+      </button>
+      <!-- Navbar-Links-Start -->
+      <div class="collapse navbar-collapse" id="navcol-1">
+        <ul class="navbar-nav me-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="./welcome.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./time-table.html">Time Table</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="#">Exam Results</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./extra-activity.html">Extra Activities</a>
+          </li>
+        </ul>
+        <!-- Student Name Dropdown -->
+        <div class="dropdown">
+          <a class="dropdown-toggle nav-dropdown text-success" aria-expanded="false" data-bs-toggle="dropdown" href="#"
+            id="student-name">Student Name</a>
+          <div class="dropdown-menu">
+            <a class="dropdown-item" href="./profile.html">Profile</a>
+            <a class="dropdown-item" href="./index.html">Logout</a>
+          </div>
+        </div>
+      </div>
+      <!-- Navbar-Links-End -->
+    </div>
+  </nav>
+  <!-- Navbar--End -->
+
+  <!-- Exam-Result-Start -->
+  <main>
+    <div class="container p-5 col-sm-11 col-md-9">
+      <p class="display-6">Gradebook</p>
+      <div class="alert alert-dark" role="alert">
+        <span class="px-2"><svg xmlns="http://www.w3.org/2000/svg" width="19" height="19" fill="currentColor"
+            class="bi bi-info-circle-fill" viewBox="0 0 16 16">
+            <path
+              d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16zm.93-9.412-1 4.705c-.07.34.029.533.304.533.194 0 .487-.07.686-.246l-.088.416c-.287.346-.92.598-1.465.598-.703 0-1.002-.422-.808-1.319l.738-3.468c.064-.293.006-.399-.287-.47l-.451-.081.082-.381 2.29-.287zM8 5.5a1 1 0 1 1 0-2 1 1 0 0 1 0 2z" />
+          </svg>
+        </span>
+        Any changes in the assessment grades will get updated in the Gradebook
+        after 24 hours.
+      </div>
+      <div class="dropdown my-4">
+        Select a subject for which you want to check your grade:
+        <select class="form-select form-select mb-3" id="subject-dropdown" aria-label=".form-select-lg example">
+          <option selected value="English">English</option>
+          <option value="Language">Language</option>
+          <option value="Mathematics">Mathematics</option>
+          <option value="Physics">Physics</option>
+          <option value="Chemistry">Chemistry</option>
+          <option value="Computer">Computer Science</option>
+        </select>
+      </div>
+      <div class="subjects-section border px-5 pt-4 pb-2 shadow bg-body rounded">
+        <p>
+          Below are your grade and score for the subject
+          <span id="subject" class="text-primary fw-bold">English</span>
+        </p>
+        <div>
+          <p class="text-primary fw-bold">
+            Marks: <span id="marks" class="text-dark fw-normal">87</span>
+          </p>
+          <p class="text-primary fw-bold">
+            Grade:
+            <span id="grade" class="text-dark fw-normal">First class with Distinction</span>
+          </p>
+        </div>
+      </div>
+    </div>
+    <br />
+  </main>
+  <!-- Exam-Result-End -->
+
+  <!-- Footer Section Start -->
+  <footer class="text-center py-4 bg-dark fixed-bottom">
+    <div class="container">
+      <div class="row row-cols-1 row-cols-lg-3">
+        <div class="col">
+          <p class="text-light my-2">Spring Flowers School © 2023</p>
+        </div>
+        <div class="col">
+          <p class="text-light my-2">Created By Anirban Das</p>
+        </div>
+        <div class="col">
+          <ul class="list-inline my-2">
+            <li class="list-inline-item">
+              <a class="link-warning" href="#">Privacy Policy</a>
+            </li>
+            <li class="list-inline-item">
+              <a class="link-warning" href="#">Terms of Use</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- Footer Section End -->
+
+  <script src="./assets/js/results.js"></script>
+  <script>
+    var studentName = document.querySelector("#student-name");
+    studentName.innerText = sessionStorage.getItem("username");
+  </script>
+
+  <!-- Bootstrap JS & Scroll-Zoom Animation JS -->
+  <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+  <script src="assets/js/bs-init.js"></script>
+</body>
+
+</html>

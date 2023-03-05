@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no" />
+    <title>Dashboard | Spring Flowers school</title>
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="assets/img/favicon-32x32.png" sizes="32x32" />
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css" />
+    <!-- My Styles -->
+    <link rel="stylesheet" href="assets/css/styles.css" />
+</head>
+
+<body>
+    <!-- Navbar--Start -->
+    <nav class="navbar navbar-light navbar-expand-md sticky-top py-3">
+        <div class="container">
+            <!-- Navbar-Logo -->
+            <img src="assets/img/logo-icon.png" width="45" height="38" /><a class="navbar-brand" href="index.html"><span
+                    class="text-success">Spring Flowers School</span></a><button data-bs-toggle="collapse"
+                data-bs-target="#navcol-1" class="navbar-toggler">
+                <span class="visually-hidden">Toggle navigation</span><span class="navbar-toggler-icon"></span>
+            </button>
+            <!-- Navbar-Links-Start -->
+            <div class="collapse navbar-collapse" id="navcol-1">
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="./welcome.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./time-table.html">Time Table</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./exam-result.html">Exam Results</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./extra-activity.html">Extra Activities</a>
+                    </li>
+                </ul>
+                <!-- Student Name Dropdown -->
+                <div class="dropdown">
+                    <a class="dropdown-toggle nav-dropdown text-success" aria-expanded="false" data-bs-toggle="dropdown"
+                        href="#" id="student-name">Student Name</a>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="./profile.html">Profile</a>
+                        <a class="dropdown-item" href="./index.html">Logout</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Navbar-Links-End -->
+        </div>
+    </nav>
+    <!-- Navbar--End -->
+
+    <main class="text-bg-light">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-7">
+                    <div class="row">
+                        <!-- Student Info starts -->
+                        <div class="students-info col-sm-6 col-md-11 mt-3 ms-2 p-4 shadow p-4 mb-4">
+                            <h4>Welcome back Anirban Das, Continue learning</h4>
+                            <div class="class-info">
+                                <p>CLASS: <span class="text-secondary">XII</span> </p>
+                                <p>MAJOR: <span class="text-secondary">MATH-COMPUTER SCIENCE</span></p>
+                                <p>ROLL NUMBER: <span class="text-secondary">5222423</span></p>
+                            </div>
+                            <div class="study-block d-flex justify-content-between align-items-center">
+                                <!-- <button class="prev" data-button="prev">&#10094;</button> -->
+                                <a class="prev text-decoration-none" onclick="plusSlides(-2)">❮</a>
+
+                                <div
+                                    class="study-subjects col-sm-6 col-md-5 shadow p-4 mb-4 d-flex justify-content-around align-items-center">
+                                    <div class="text-primary">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="35"
+                                            fill="currentColor" class="bi bi-play-circle-fill" viewBox="0 0 16 16">
+                                            <path
+                                                d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM6.79 5.093A.5.5 0 0 0 6 5.5v5a.5.5 0 0 0 .79.407l3.5-2.5a.5.5 0 0 0 0-.814l-3.5-2.5z" />
+                                        </svg>
+                                    </div>
+
+                                    <div>
+                                        <p> Mathematics </p>
+                                        <p> Integration Part - I</p>
+                                    </div>
+                                </div>
+                                <div
+                                    class="study-subjects col-sm-6 col-md-5 shadow p-4 mb-4 d-flex justify-content-around align-items-center">
+                                    <span class="text-danger">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="35"
+                                            fill="currentColor" class="bi bi-file-pdf" viewBox="0 0 16 16">
+                                            <path
+                                                d="M4 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H4zm0 1h8a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1z" />
+                                            <path
+                                                d="M4.603 12.087a.81.81 0 0 1-.438-.42c-.195-.388-.13-.776.08-1.102.198-.307.526-.568.897-.787a7.68 7.68 0 0 1 1.482-.645 19.701 19.701 0 0 0 1.062-2.227 7.269 7.269 0 0 1-.43-1.295c-.086-.4-.119-.796-.046-1.136.075-.354.274-.672.65-.823.192-.077.4-.12.602-.077a.7.7 0 0 1 .477.365c.088.164.12.356.127.538.007.187-.012.395-.047.614-.084.51-.27 1.134-.52 1.794a10.954 10.954 0 0 0 .98 1.686 5.753 5.753 0 0 1 1.334.05c.364.065.734.195.96.465.12.144.193.32.2.518.007.192-.047.382-.138.563a1.04 1.04 0 0 1-.354.416.856.856 0 0 1-.51.138c-.331-.014-.654-.196-.933-.417a5.716 5.716 0 0 1-.911-.95 11.642 11.642 0 0 0-1.997.406 11.311 11.311 0 0 1-1.021 1.51c-.29.35-.608.655-.926.787a.793.793 0 0 1-.58.029zm1.379-1.901c-.166.076-.32.156-.459.238-.328.194-.541.383-.647.547-.094.145-.096.25-.04.361.01.022.02.036.026.044a.27.27 0 0 0 .035-.012c.137-.056.355-.235.635-.572a8.18 8.18 0 0 0 .45-.606zm1.64-1.33a12.647 12.647 0 0 1 1.01-.193 11.666 11.666 0 0 1-.51-.858 20.741 20.741 0 0 1-.5 1.05zm2.446.45c.15.162.296.3.435.41.24.19.407.253.498.256a.107.107 0 0 0 .07-.015.307.307 0 0 0 .094-.125.436.436 0 0 0 .059-.2.095.095 0 0 0-.026-.063c-.052-.062-.2-.152-.518-.209a3.881 3.881 0 0 0-.612-.053zM8.078 5.8a6.7 6.7 0 0 0 .2-.828c.031-.188.043-.343.038-.465a.613.613 0 0 0-.032-.198.517.517 0 0 0-.145.04c-.087.035-.158.106-.196.283-.04.192-.03.469.046.822.024.111.054.227.09.346z" />
+                                        </svg>
+                                    </span>
+                                    <div>
+                                        <p> Physics </p>
+                                        <p> Newtons Law.pdf </p>
+                                    </div>
+                                </div>
+                                <div
+                                    class="study-subjects col-sm-6 col-md-5 shadow p-4 mb-4 d-flex justify-content-around align-items-center ">
+                                    <div class="text-primary">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="35"
+                                            fill="currentColor" class="bi bi-play-circle-fill" viewBox="0 0 16 16">
+                                            <path
+                                                d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM6.79 5.093A.5.5 0 0 0 6 5.5v5a.5.5 0 0 0 .79.407l3.5-2.5a.5.5 0 0 0 0-.814l-3.5-2.5z" />
+                                        </svg>
+                                    </div>
+
+                                    <div>
+                                        <p> English </p>
+                                        <p> Lesson - 1 Julius Ceasar </p>
+                                    </div>
+                                </div>
+                                <div
+                                    class="study-subjects col-sm-6 col-md-5 shadow p-4 mb-4 d-flex justify-content-around align-items-center">
+                                    <span class="text-warning">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="35"
+                                            fill="currentColor" class="bi bi-pencil-square" viewBox="0 0 16 16">
+                                            <path
+                                                d="M15.502 1.94a.5.5 0 0 1 0 .706L14.459 3.69l-2-2L13.502.646a.5.5 0 0 1 .707 0l1.293 1.293zm-1.75 2.456-2-2L4.939 9.21a.5.5 0 0 0-.121.196l-.805 2.414a.25.25 0 0 0 .316.316l2.414-.805a.5.5 0 0 0 .196-.12l6.813-6.814z" />
+                                            <path fill-rule="evenodd"
+                                                d="M1 13.5A1.5 1.5 0 0 0 2.5 15h11a1.5 1.5 0 0 0 1.5-1.5v-6a.5.5 0 0 0-1 0v6a.5.5 0 0 1-.5.5h-11a.5.5 0 0 1-.5-.5v-11a.5.5 0 0 1 .5-.5H9a.5.5 0 0 0 0-1H2.5A1.5 1.5 0 0 0 1 2.5v11z" />
+                                        </svg>
+                                    </span>
+                                    <div>
+                                        <p> French </p>
+                                        <p> Congugation Quiz</p>
+                                    </div>
+                                </div>
+                                <div
+                                    class="study-subjects col-sm-6 col-md-5 shadow p-4 mb-4 pe-0 d-flex justify-content-around align-items-center">
+                                    <span class="text-warning">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="35"
+                                            fill="currentColor" class="bi bi-pencil-square" viewBox="0 0 16 16">
+                                            <path
+                                                d="M15.502 1.94a.5.5 0 0 1 0 .706L14.459 3.69l-2-2L13.502.646a.5.5 0 0 1 .707 0l1.293 1.293zm-1.75 2.456-2-2L4.939 9.21a.5.5 0 0 0-.121.196l-.805 2.414a.25.25 0 0 0 .316.316l2.414-.805a.5.5 0 0 0 .196-.12l6.813-6.814z" />
+                                            <path fill-rule="evenodd"
+                                                d="M1 13.5A1.5 1.5 0 0 0 2.5 15h11a1.5 1.5 0 0 0 1.5-1.5v-6a.5.5 0 0 0-1 0v6a.5.5 0 0 1-.5.5h-11a.5.5 0 0 1-.5-.5v-11a.5.5 0 0 1 .5-.5H9a.5.5 0 0 0 0-1H2.5A1.5 1.5 0 0 0 1 2.5v11z" />
+                                        </svg>
+                                    </span>
+                                    <div>
+                                        <p> Computer Science </p>
+                                        <p> Loops Problem Statement</p>
+                                    </div>
+                                </div>
+
+                                <!-- <button class="next" data-button="next">&#10095;</button> -->
+
+                                <a class="next text-decoration-none" onclick="plusSlides(2)">❯</a>
+                            </div>
+                        </div>
+
+                        <!-- BIO DATA Section starts  -->
+                        <div
+                            class="bio-data col-sm-6 col-md-11 mt-3 ms-1 p-4 d-flex justify-content-start align-items-center shadow p-4 mb-4">
+                            <img src="./assets/img/dp.jpg" alt="Display picture" class="img-thumbnail rounded-circle dp"
+                                width="40%">
+                            <div>
+                                <div class="table-responsive mx-2">
+                                    <table class="table mx-2">
+                                        <thead>
+                                            <tr>
+                                                <th scope="col">Full Name</th>
+                                                <td scope="col">Anirban Das</td>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <th scope="row">Father's Name</th>
+                                                <td>Dilip Kumar Das</td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">Gender</th>
+                                                <td>Male</td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">Date of Birth</th>
+                                                <td>04-03-1997</td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">Address</th>
+                                                <td>28, Flower Bazaar, Bangalore, India - 565005</td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">Phone Number</th>
+                                                <td>90010 80010</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Activity section starts -->
+                        <div class="activities col-sm-6 col-md-11 mt-3 ms-2 p-4 shadow p-4 mb-4 mh-50 overflow-auto">
+                            <div class="tab d-flex justify-content-around text-bg-light px-5 py-2 mb-3 sticky-top">
+                                <a class="tablinks text-decoration-none px-1"
+                                    onclick="displayContent(event, 'upcoming')">UPCOMING</a>
+                                <a class="tablinks text-decoration-none px-1"
+                                    onclick="displayContent(event, 'ongoing')">ONGOING</a>
+                                <a class="tablinks text-decoration-none px-1"
+                                    onclick="displayContent(event, 'completed')">COMPLETED</a>
+                            </div>
+                            <div id="upcoming" class="tabcontent text-center pb-3">
+                                <p>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="70" height="70" fill="currentColor"
+                                        class="bi bi-hourglass-split" viewBox="0 0 16 16">
+                                        <path
+                                            d="M2.5 15a.5.5 0 1 1 0-1h1v-1a4.5 4.5 0 0 1 2.557-4.06c.29-.139.443-.377.443-.59v-.7c0-.213-.154-.451-.443-.59A4.5 4.5 0 0 1 3.5 3V2h-1a.5.5 0 0 1 0-1h11a.5.5 0 0 1 0 1h-1v1a4.5 4.5 0 0 1-2.557 4.06c-.29.139-.443.377-.443.59v.7c0 .213.154.451.443.59A4.5 4.5 0 0 1 12.5 13v1h1a.5.5 0 0 1 0 1h-11zm2-13v1c0 .537.12 1.045.337 1.5h6.326c.216-.455.337-.963.337-1.5V2h-7zm3 6.35c0 .701-.478 1.236-1.011 1.492A3.5 3.5 0 0 0 4.5 13s.866-1.299 3-1.48V8.35zm1 0v3.17c2.134.181 3 1.48 3 1.48a3.5 3.5 0 0 0-1.989-3.158C8.978 9.586 8.5 9.052 8.5 8.351z" />
+                                    </svg>
+                                </p>
+                                <p>Stay tuned! We're charting new learning paths for you</p>
+                            </div>
+                            <div id="ongoing" class="tabcontent pb-3">
+                                <div
+                                    class="activity-subjects w-100 d-flex justify-content-start align-items-center px-2 pt-2 border-secondary border-bottom col-sm-6 col-md-5 px-5">
+                                    <span class="text-warning pe-3">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="35"
+                                            fill="currentColor" class="bi bi-pencil-square" viewBox="0 0 16 16">
+                                            <path
+                                                d="M15.502 1.94a.5.5 0 0 1 0 .706L14.459 3.69l-2-2L13.502.646a.5.5 0 0 1 .707 0l1.293 1.293zm-1.75 2.456-2-2L4.939 9.21a.5.5 0 0 0-.121.196l-.805 2.414a.25.25 0 0 0 .316.316l2.414-.805a.5.5 0 0 0 .196-.12l6.813-6.814z" />
+                                            <path fill-rule="evenodd"
+                                                d="M1 13.5A1.5 1.5 0 0 0 2.5 15h11a1.5 1.5 0 0 0 1.5-1.5v-6a.5.5 0 0 0-1 0v6a.5.5 0 0 1-.5.5h-11a.5.5 0 0 1-.5-.5v-11a.5.5 0 0 1 .5-.5H9a.5.5 0 0 0 0-1H2.5A1.5 1.5 0 0 0 1 2.5v11z" />
+                                        </svg>
+                                    </span>
+                                    <div>
+                                        <p> French </p>
+                                        <p> Internal Assessment - II</p>
+                                        <p><small>Due: 28 - 01 - 2023 </small></p>
+                                    </div>
+                                </div>
+                                <div
+                                    class="activity-subjects w-100 d-flex justify-content-start align-items-center px-2 pt-2 border-secondary border-bottom col-sm-6 col-md-5 px-5">
+                                    <span class="text-warning pe-3">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="35"
+                                            fill="currentColor" class="bi bi-pencil-square" viewBox="0 0 16 16">
+                                            <path
+                                                d="M15.502 1.94a.5.5 0 0 1 0 .706L14.459 3.69l-2-2L13.502.646a.5.5 0 0 1 .707 0l1.293 1.293zm-1.75 2.456-2-2L4.939 9.21a.5.5 0 0 0-.121.196l-.805 2.414a.25.25 0 0 0 .316.316l2.414-.805a.5.5 0 0 0 .196-.12l6.813-6.814z" />
+                                            <path fill-rule="evenodd"
+                                                d="M1 13.5A1.5 1.5 0 0 0 2.5 15h11a1.5 1.5 0 0 0 1.5-1.5v-6a.5.5 0 0 0-1 0v6a.5.5 0 0 1-.5.5h-11a.5.5 0 0 1-.5-.5v-11a.5.5 0 0 1 .5-.5H9a.5.5 0 0 0 0-1H2.5A1.5 1.5 0 0 0 1 2.5v11z" />
+                                        </svg>
+                                    </span>
+                                    <div>
+                                        <p> Mathematics </p>
+                                        <p> Internal Assessment - II </p>
+                                        <p><small>Due: 28 - 01 - 2023 </small></p>
+                                    </div>
+                                </div>
+                                <div
+                                    class="activity-subjects w-100 d-flex justify-content-start align-items-center px-2 pt-2 border-secondary border-bottom  col-sm-6 col-md-5 px-5">
+                                    <span class="text-warning pe-3">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="35"
+                                            fill="currentColor" class="bi bi-pencil-square" viewBox="0 0 16 16">
+                                            <path
+                                                d="M15.502 1.94a.5.5 0 0 1 0 .706L14.459 3.69l-2-2L13.502.646a.5.5 0 0 1 .707 0l1.293 1.293zm-1.75 2.456-2-2L4.939 9.21a.5.5 0 0 0-.121.196l-.805 2.414a.25.25 0 0 0 .316.316l2.414-.805a.5.5 0 0 0 .196-.12l6.813-6.814z" />
+                                            <path fill-rule="evenodd"
+                                                d="M1 13.5A1.5 1.5 0 0 0 2.5 15h11a1.5 1.5 0 0 0 1.5-1.5v-6a.5.5 0 0 0-1 0v6a.5.5 0 0 1-.5.5h-11a.5.5 0 0 1-.5-.5v-11a.5.5 0 0 1 .5-.5H9a.5.5 0 0 0 0-1H2.5A1.5 1.5 0 0 0 1 2.5v11z" />
+                                        </svg>
+                                    </span>
+                                    <div>
+                                        <p> Chemistry </p>
+                                        <p> Internal Assessment - II </p>
+                                        <p><small>Due: 28 - 01 - 2023 </small></p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="completed" class="tabcontent pb-5">
+                                <div
+                                    class="activity-subjects w-100 d-flex justify-content-start align-items-center col-s px-2 pt-2 border-secondary border-bottom m-9 col-md-5 px-5">
+                                    <span class="text-warning pe-3">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="35"
+                                            fill="currentColor" class="bi bi-pencil-square" viewBox="0 0 16 16">
+                                            <path
+                                                d="M15.502 1.94a.5.5 0 0 1 0 .706L14.459 3.69l-2-2L13.502.646a.5.5 0 0 1 .707 0l1.293 1.293zm-1.75 2.456-2-2L4.939 9.21a.5.5 0 0 0-.121.196l-.805 2.414a.25.25 0 0 0 .316.316l2.414-.805a.5.5 0 0 0 .196-.12l6.813-6.814z" />
+                                            <path fill-rule="evenodd"
+                                                d="M1 13.5A1.5 1.5 0 0 0 2.5 15h11a1.5 1.5 0 0 0 1.5-1.5v-6a.5.5 0 0 0-1 0v6a.5.5 0 0 1-.5.5h-11a.5.5 0 0 1-.5-.5v-11a.5.5 0 0 1 .5-.5H9a.5.5 0 0 0 0-1H2.5A1.5 1.5 0 0 0 1 2.5v11z" />
+                                        </svg>
+                                    </span>
+                                    <div>
+                                        <p> Computer Science </p>
+                                        <p> Internal Assessment - II </p>
+                                    </div>
+                                </div>
+                                <div
+                                    class="activity-subjects w-100 d-flex justify-content-start align-items-center col-s px-2 pt-2 border-secondary border-bottom m-9 col-md-5 px-5">
+                                    <span class="text-warning pe-3">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="35"
+                                            fill="currentColor" class="bi bi-pencil-square" viewBox="0 0 16 16">
+                                            <path
+                                                d="M15.502 1.94a.5.5 0 0 1 0 .706L14.459 3.69l-2-2L13.502.646a.5.5 0 0 1 .707 0l1.293 1.293zm-1.75 2.456-2-2L4.939 9.21a.5.5 0 0 0-.121.196l-.805 2.414a.25.25 0 0 0 .316.316l2.414-.805a.5.5 0 0 0 .196-.12l6.813-6.814z" />
+                                            <path fill-rule="evenodd"
+                                                d="M1 13.5A1.5 1.5 0 0 0 2.5 15h11a1.5 1.5 0 0 0 1.5-1.5v-6a.5.5 0 0 0-1 0v6a.5.5 0 0 1-.5.5h-11a.5.5 0 0 1-.5-.5v-11a.5.5 0 0 1 .5-.5H9a.5.5 0 0 0 0-1H2.5A1.5 1.5 0 0 0 1 2.5v11z" />
+                                        </svg>
+                                    </span>
+                                    <div>
+                                        <p> Physics </p>
+                                        <p> Internal Assessment - II </p>
+                                    </div>
+                                </div>
+                                <div
+                                    class="activity-subjects w-100 d-flex justify-content-start align-items-center col-s px-2 pt-2 border-secondary border-bottom m-9 col-md-5 px-5">
+                                    <span class="text-warning pe-3">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="35"
+                                            fill="currentColor" class="bi bi-pencil-square" viewBox="0 0 16 16">
+                                            <path
+                                                d="M15.502 1.94a.5.5 0 0 1 0 .706L14.459 3.69l-2-2L13.502.646a.5.5 0 0 1 .707 0l1.293 1.293zm-1.75 2.456-2-2L4.939 9.21a.5.5 0 0 0-.121.196l-.805 2.414a.25.25 0 0 0 .316.316l2.414-.805a.5.5 0 0 0 .196-.12l6.813-6.814z" />
+                                            <path fill-rule="evenodd"
+                                                d="M1 13.5A1.5 1.5 0 0 0 2.5 15h11a1.5 1.5 0 0 0 1.5-1.5v-6a.5.5 0 0 0-1 0v6a.5.5 0 0 1-.5.5h-11a.5.5 0 0 1-.5-.5v-11a.5.5 0 0 1 .5-.5H9a.5.5 0 0 0 0-1H2.5A1.5 1.5 0 0 0 1 2.5v11z" />
+                                        </svg>
+                                    </span>
+                                    <div>
+                                        <p> English </p>
+                                        <p> Internal Assessment - II </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-5">
+                    <div class="row">
+                        <div class="gradebook col-sm-6 col-md-11 mt-3 ms-1 p-4 shadow p-4 mb-4 text-center">
+                            <div class="d-flex justify-content-around">
+                                <div>In progress
+                                    <p>
+                                    <h3>6</h3>
+                                    </p>
+                                </div>
+                                <div>Completed
+                                    <p>
+                                    <h3>0</h3>
+                                    </p>
+                                </div>
+                                <div>InComplete
+                                    <p>
+                                    <h3>0</h3>
+                                    </p>
+                                </div>
+                            </div>
+                            <a href="./exam-result.html" class="text-decoration-none">View Gradebook</a>
+                        </div>
+                        <div
+                            class="attendance col-sm-6 col-md-11 mt-3 ms-1 p-4 d-flex justify-content-around align-items-center shadow p-4 mb-4">
+                            <span class="text-primary">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="55" height="55" fill="currentColor"
+                                    class="bi bi-person-check" viewBox="0 0 16 16">
+                                    <path
+                                        d="M12.5 16a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7Zm1.679-4.493-1.335 2.226a.75.75 0 0 1-1.174.144l-.774-.773a.5.5 0 0 1 .708-.708l.547.548 1.17-1.951a.5.5 0 1 1 .858.514ZM11 5a3 3 0 1 1-6 0 3 3 0 0 1 6 0ZM8 7a2 2 0 1 0 0-4 2 2 0 0 0 0 4Z" />
+                                    <path
+                                        d="M8.256 14a4.474 4.474 0 0 1-.229-1.004H3c.001-.246.154-.986.832-1.664C4.484 10.68 5.711 10 8 10c.26 0 .507.009.74.025.226-.341.496-.65.804-.918C9.077 9.038 8.564 9 8 9c-5 0-6 3-6 4s1 1 1 1h5.256Z" />
+                                </svg>
+                            </span>
+                            <div>
+                                <h4>Attendance</h4>
+                                <p class="h3 text-success">100%</p>
+                                <p>Top Learners have 90%+ attendance</p>
+                            </div>
+                            <a href="#" class="text-decoration-none">View Details</a>
+                        </div>
+                        <div class="career-prep col-sm-6 col-md-11 mt-3 ms-1 p-4 shadow p-4 mb-4">
+                            <div>
+                                <span class="text-danger">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="35" fill="currentColor"
+                                        class="bi bi-rocket-fill" viewBox="0 0 16 16">
+                                        <path
+                                            d="M10.175 1.991c.81 1.312 1.583 3.43 1.778 6.819l1.5 1.83A2.5 2.5 0 0 1 14 12.202V15.5a.5.5 0 0 1-.9.3l-1.125-1.5c-.166-.222-.42-.4-.752-.57-.214-.108-.414-.192-.627-.282l-.196-.083C9.7 13.793 8.85 14 8 14c-.85 0-1.7-.207-2.4-.635-.068.03-.133.057-.198.084-.211.089-.411.173-.625.281-.332.17-.586.348-.752.57L2.9 15.8a.5.5 0 0 1-.9-.3v-3.298a2.5 2.5 0 0 1 .548-1.562l.004-.005L4.049 8.81c.197-3.323.969-5.434 1.774-6.756.466-.767.94-1.262 1.31-1.57a3.67 3.67 0 0 1 .601-.41A.549.549 0 0 1 8 0c.101 0 .17.027.25.064.037.017.086.041.145.075.118.066.277.167.463.315.373.297.85.779 1.317 1.537ZM9.5 6c0-1.105-.672-2-1.5-2s-1.5.895-1.5 2S7.172 8 8 8s1.5-.895 1.5-2Z" />
+                                        <path
+                                            d="M8 14.5c.5 0 .999-.046 1.479-.139L8.4 15.8a.5.5 0 0 1-.8 0l-1.079-1.439c.48.093.98.139 1.479.139Z" />
+                                    </svg>
+                                </span>
+                                <span class="text-danger">EXCELERATE - College Prep</span>
+                            </div>
+                            <div class="pt-3">
+                                <h3>You're very close to your goal!</h3>
+                                <p>Finish Preparing for your SAT/NEET/JEE to unlock mentorship & college selection
+                                    sessions</p>
+                                <p>Top Learners have 90%+ attendance</p>
+                                <div class="d-flex justify-content-between">
+                                    <span>50% DONE</span>
+                                    <span class="text-danger">OVERDUE: 1 DAYS AGO</span>
+                                </div>
+                                <div class="progress">
+                                    <div class="progress-bar bg-danger" style="width:50%"></div>
+                                </div>
+                                <!-- <progress class=" progress-bar bg-success w-100" value="50" max="100"> 50% </progress> -->
+                            </div>
+                            <div class="d-flex justify-content-between align-items-center pt-3">
+                                <span class="text-primary">38+ LEARNERS HAVE COMPLETED</span>
+                                <button class="btn btn-primary">
+                                    &#9654; RESUME</button>
+                            </div>
+                        </div>
+                        <div
+                            class="ticket col-sm-6 col-md-11 mt-3 ms-1 p-4 d-flex justify-content-start shadow p-4 mb-4">
+                            <span class="text-success">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="55" height="55" fill="currentColor"
+                                    class="bi bi-chat-dots" viewBox="0 0 16 16">
+                                    <path
+                                        d="M5 8a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm4 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm3 1a1 1 0 1 0 0-2 1 1 0 0 0 0 2z" />
+                                    <path
+                                        d="m2.165 15.803.02-.004c1.83-.363 2.948-.842 3.468-1.105A9.06 9.06 0 0 0 8 15c4.418 0 8-3.134 8-7s-3.582-7-8-7-8 3.134-8 7c0 1.76.743 3.37 1.97 4.6a10.437 10.437 0 0 1-.524 2.318l-.003.011a10.722 10.722 0 0 1-.244.637c-.079.186.074.394.273.362a21.673 21.673 0 0 0 .693-.125zm.8-3.108a1 1 0 0 0-.287-.801C1.618 10.83 1 9.468 1 8c0-3.192 3.004-6 7-6s7 2.808 7 6c0 3.193-3.004 6-7 6a8.06 8.06 0 0 1-2.088-.272 1 1 0 0 0-.711.074c-.387.196-1.24.57-2.634.893a10.97 10.97 0 0 0 .398-2z" />
+                                </svg>
+                            </span>
+                            <div class="ps-4">
+                                <h3>Need Assistance</h3>
+                                <p>Click here to reach out to us</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer Section Start -->
+    <footer class="text-center py-4 bg-dark">
+        <div class="container">
+            <div class="row row-cols-1 row-cols-lg-3">
+                <div class="col">
+                    <p class="text-light my-2">Spring Flowers School © 2023</p>
+                </div>
+                <div class="col">
+                    <p class="text-light my-2">Created By Anirban Das</p>
+                </div>
+                <div class="col">
+                    <ul class="list-inline my-2">
+                        <li class="list-inline-item">
+                            <a class="link-warning" href="#">Privacy Policy</a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a class="link-warning" href="#">Terms of Use</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Footer Section End -->
+
+    <script src="./assets/js/main.js"></script>
+    <script>
+        var studentName = document.querySelector("#student-name");
+        studentName.innerText = sessionStorage.getItem("username");
+    </script>
+    <!-- Bootstrap JS & Scroll-Zoom Animation JS -->
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="assets/js/bs-init.js"></script>
+</body>
+
+</html>

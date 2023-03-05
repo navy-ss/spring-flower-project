@@ -1,0 +1,151 @@
+body {
+  background: rgb(222, 232, 235);
+}
+
+.btn {
+  border-radius: 10px;
+}
+
+.navbar {
+  border-bottom: 2px solid rgba(144, 172, 180, 0.8) !important;
+  background: rgba(194, 212, 217, 0.8);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  font-weight: 600;
+}
+
+.index-logo {
+  display: flex;
+  justify-content: center;
+}
+
+.hero-content {
+  background: rgba(222, 232, 235, 0.88);
+}
+
+@media (min-width: 768px) {
+  .hero-content {
+    background: transparent;
+    height: 800px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .hero-content {
+    height: 800px;
+  }
+}
+
+.card .btn {
+  border-radius: 20px;
+  padding-left: 16px;
+  margin-left: -16px;
+  background: transparent;
+  border-style: none;
+}
+
+.card:hover .card-img {
+  transform: scale(1.1);
+}
+
+.card {
+  overflow: hidden;
+  border-radius: 20px;
+}
+
+.card .card-img {
+  transition: all ease 0.3s;
+}
+
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1000px;
+  }
+}
+
+.card:hover .btn {
+  background: var(--bs-blue);
+  color: white;
+}
+
+.pricing-card .btn {
+  padding-left: 0;
+}
+
+.dropdown .dropdown-toggle {
+  text-decoration: none;
+}
+
+.dropdown {
+  font-size: 20px;
+  height: 35px;
+}
+
+.dropdown-menu {
+  background: rgba(194, 212, 217);
+}
+
+.hero-content h1 {
+  color: rgb(223, 187, 75);
+  text-shadow: 2px 2px 3px rgb(20, 93, 100);
+}
+
+.about-color {
+  color: rgb(18, 93, 98);
+}
+
+text-color {
+  color: rgb(18, 93, 98);
+}
+
+.pt-4 {
+  padding-top: 2.5rem !important;
+}
+
+@media (min-width: 300px) {
+  .text-color {
+    color: rgb(18, 93, 98);
+  }
+}
+
+@media (min-width: 300px) {
+  .hero-mobile {
+    filter: brightness(70%);
+    opacity: 0.9;
+  }
+}
+
+@media (min-width: 768px) {
+  .btn-padding {
+    margin-top: 40px;
+  }
+}
+@media (max-width: 420px) {
+  .index-logo img {
+    width: 100%;
+  }
+}
+
+@media (min-width: 768px) {
+  nav a span {
+    font-size: 12px;
+  }
+}
+
+@media (min-width: 992px) {
+  nav a span {
+    font-size: 20px;
+  }
+}
+
+@media (min-width: 768px) {
+  .nav-dropdown {
+    font-size: 17px;
+  }
+}
+
+@media (min-width: 992px) {
+  .nav-dropdown {
+    font-size: 20px;
+  }
+}
