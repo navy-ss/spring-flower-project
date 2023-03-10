@@ -4,7 +4,7 @@ const loginBtn = document.querySelector("#submit");
 const errorMsg = document.querySelector("#error-msg");
 
 function loginHandler() {
-  if (userName.value === "admin" && passWord.value === "admin") {
+  if (userName.value === "student" && passWord.value === "admin") {
     sessionStorage.setItem("username", userName.value);
     window.location.href = "welcome.html";
   } else {

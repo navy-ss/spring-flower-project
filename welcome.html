@@ -215,11 +215,14 @@
   <script>
     const activityBody = document.querySelector(".activity-body");
     const studentName = document.querySelector("#student-name");
+    const activitySection = document.querySelector(".activity-list");
     studentName.innerText = sessionStorage.getItem("username");
 
     for (const i in sessionStorage) {
       if (sessionStorage.hasOwnProperty(i)) {
         if (i.includes("__Activity__")) {
+          activitySection.classList.remove("d-none");
+          activitySection.classList.add("d-block");
           let activityName = i.slice(0, i.length - 12);
           activityBody.innerHTML += `<div class="card-body">
                     <h5 class="card-title" id="activity-title">${activityName}</h5>

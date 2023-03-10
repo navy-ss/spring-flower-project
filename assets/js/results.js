@@ -1,5 +1,4 @@
 const subject_section = document.querySelector(".subjects-section");
-// const subject_dropdown = document.querySelectorAll(".dropdown-item");
 const dropdown = document.querySelector("#subject-dropdown");
 const marks = document.querySelector("#marks");
 const grade = document.querySelector("#grade");
@@ -15,7 +14,7 @@ function getMarks(subject) {
 }
 
 function findGrades(mark) {
-  if (mark === 100) return "Expemplary";
+  if (mark === 100) return "Exemplary";
   else if (mark < 100 && mark >= 80) return "First class with Distinction";
   else if (mark < 80 && mark >= 65) return "First class";
   else if (mark < 65 && mark >= 50) return "Average";
@@ -23,17 +22,9 @@ function findGrades(mark) {
 }
 dropdown.addEventListener("change", () => {
   var value = dropdown.options[dropdown.selectedIndex].value;
-  // subject_section.classList.remove("d-none");
   subject_section.classList.add("d-block");
   subject_name.innerText = value;
   const findMark = getMarks(value);
   marks.innerText = findMark;
   grade.innerText = findGrades(findMark);
-
-  console.log(value, findMark);
-  // var text = dropdown.options[dropdown.selectedIndex].text;
-  // console.log(value, text)
 });
-// const showGrades = (e) => console.log(e.innerText);
-
-// subject_dropdown.forEach(i => i.addEventListener("click", showGrades))
