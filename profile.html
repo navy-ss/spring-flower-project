@@ -61,11 +61,11 @@
                     <div class="row">
                         <!-- Student Info starts -->
                         <div class="students-info col-sm-6 col-md-11 mt-3 ms-2 p-4 shadow p-4 mb-4">
-                            <h4>Welcome back Anirban Das, Continue learning</h4>
+                            <h4>Welcome back <span id="student-name">Anirban Das</span>, Continue learning</h4>
                             <div class="class-info">
                                 <p>CLASS: <span class="text-secondary">XII</span> </p>
                                 <p>MAJOR: <span class="text-secondary">MATH-COMPUTER SCIENCE</span></p>
-                                <p>ROLL NUMBER: <span class="text-secondary">5222423</span></p>
+                                <p>ROLL NUMBER: <span class="text-secondary" id="rollNum">5222423</span></p>
                             </div>
                             <div class="study-block d-flex justify-content-between align-items-center">
                                 <!-- <button class="prev" data-button="prev">&#10094;</button> -->
@@ -167,29 +167,29 @@
                                         <thead>
                                             <tr>
                                                 <th scope="col">Full Name</th>
-                                                <td scope="col">Anirban Das</td>
+                                                <td scope="col" id="fullName">Anirban Das</td>
                                             </tr>
                                         </thead>
                                         <tbody>
                                             <tr>
                                                 <th scope="row">Father's Name</th>
-                                                <td>Dilip Kumar Das</td>
+                                                <td id="fathersName">Dilip Kumar Das</td>
                                             </tr>
                                             <tr>
                                                 <th scope="row">Gender</th>
-                                                <td>Male</td>
+                                                <td id="gender">Male</td>
                                             </tr>
                                             <tr>
                                                 <th scope="row">Date of Birth</th>
-                                                <td>04-03-1997</td>
+                                                <td id="dob">04-03-1997</td>
                                             </tr>
                                             <tr>
                                                 <th scope="row">Address</th>
-                                                <td>28, Flower Bazaar, Bangalore, India - 565005</td>
+                                                <td id="address">28, Flower Bazaar, Bangalore, India - 565005</td>
                                             </tr>
                                             <tr>
                                                 <th scope="row">Phone Number</th>
-                                                <td>90010 80010</td>
+                                                <td id="phone">90010 80010</td>
                                             </tr>
                                         </tbody>
                                     </table>
@@ -445,8 +445,13 @@
 
     <script src="./assets/js/main.js"></script>
     <script>
-        var studentName = document.querySelector("#student-name");
-        studentName.innerText = sessionStorage.getItem("username");
+        // var studentName = document.querySelector("#student-name");
+        // studentName.innerText = sessionStorage.getItem("username");
+        showSlides(slideIndex);
+        displayContent(event, 'upcoming');
+        fetchStudentData(profile);
+        let studentName = document.querySelectorAll("#student-name");
+        studentName.forEach(element => element.innerText = sessionStorage.getItem("username"))
     </script>
     <!-- Bootstrap JS & Scroll-Zoom Animation JS -->
     <script src="assets/bootstrap/js/bootstrap.min.js"></script>

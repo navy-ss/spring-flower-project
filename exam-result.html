@@ -71,7 +71,8 @@
       <div class="dropdown my-4">
         Select a subject for which you want to check your grade:
         <select class="form-select form-select mb-3" id="subject-dropdown" aria-label=".form-select-lg example">
-          <option selected value="English">English</option>
+          <option selected disabled>Select</option>
+          <option value="English">English</option>
           <option value="Language">Language</option>
           <option value="Mathematics">Mathematics</option>
           <option value="Physics">Physics</option>
@@ -82,15 +83,15 @@
       <div class="subjects-section border px-5 pt-4 pb-2 shadow bg-body rounded">
         <p>
           Below are your grade and score for the subject
-          <span id="subject" class="text-primary fw-bold">English</span>
+          <span id="subject" class="text-primary fw-bold"></span>
         </p>
         <div>
           <p class="text-primary fw-bold">
-            Marks: <span id="marks" class="text-dark fw-normal">87</span>
+            Marks: <span id="marks" class="text-dark fw-normal"></span>
           </p>
           <p class="text-primary fw-bold">
             Grade:
-            <span id="grade" class="text-dark fw-normal">First class with Distinction</span>
+            <span id="grade" class="text-dark fw-normal"></span>
           </p>
         </div>
       </div>
@@ -124,8 +125,10 @@
   </footer>
   <!-- Footer Section End -->
 
-  <script src="./assets/js/results.js"></script>
+  <!-- <script src="./assets/js/results.js"></script> -->
+  <script src="./assets/js/main.js"></script>
   <script>
+    fetchStudentData(result);
     var studentName = document.querySelector("#student-name");
     studentName.innerText = sessionStorage.getItem("username");
   </script>

@@ -1,0 +1,73 @@
+{
+  "students": [
+    {
+      "id": 1,
+      "username": "AnirbanDas",
+      "password": "anirban123",
+      "fullName": "Anirban Das",
+      "fatherName": "Dilip Kumar Das",
+      "rollNum": "4222420",
+      "dob": "01-03-1998",
+      "gender": "Male",
+      "Address": "28, Flower Bazaar, Bangalore, India - 565005",
+      "phoneNumber": "90010 8001",
+      "profilePath": "\\assets\\img\\dp.jpg",
+      "marks": [
+        {
+          "English": 75,
+          "Language": 87,
+          "Mathematics": 100,
+          "Physics": 60,
+          "Chemistry": 49,
+          "Computer": 92
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "username": "Pooja",
+      "password": "pooja123",
+      "fullName": "Pooja Arora",
+      "fatherName": "Rajesh Arora",
+      "rollNum": "4222387",
+      "dob": "29-12-1999",
+      "gender": "Female",
+      "Address": "187/21A, Oak Ridge Apartments, Bayhill Avenue, Bangalore, India - 789200",
+      "phoneNumber": "99852 12345",
+      "profilePath": "\\assets\\img\\dp1.jpg",
+      "marks": [
+        {
+          "English": 99,
+          "Language": 57,
+          "Mathematics": 80,
+          "Physics": 63,
+          "Chemistry": 78,
+          "Computer": 95
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "username": "Kanishka",
+      "password": "Kanishka123",
+      "fullName": "Kanishka Akash",
+      "fatherName": "Akash",
+      "rollNum": "4222745",
+      "dob": "23-12-1996",
+      "gender": "Female",
+      "Address": "75B, Blue Sky, Grapeland Street Circle, Mumbai, India - 452017",
+      "phoneNumber": "90000 40001",
+      "profilePath": "\\assets\\img\\dp2.jpg",
+      "marks": [
+        {
+          "English": 86,
+          "Language": 80,
+          "Mathematics": 60,
+          "Physics": 71,
+          "Chemistry": 55,
+          "Computer": 79
+        }
+      ]
+    }
+  ]
+}
